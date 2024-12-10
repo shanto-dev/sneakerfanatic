@@ -2391,9 +2391,9 @@ header {
 
 .sc-user-manual-bg {
   position: absolute;
-  left: 0;
+  left: -27px;
   top: 0;
-  width: 100%;
+  width: calc(100% + 35px);
   height: 100%;
   z-index: -1; }
 
