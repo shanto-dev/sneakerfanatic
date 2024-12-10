@@ -3,214 +3,12 @@
     background: var(--primary-color);
 }
 
-
-
-
-
-/********* Product Hero start 
-.product-hero{
-    padding: 50px 0;
-    background: var(--white-color);
-    .content-wrapper{
-        display: flex;
-        gap: 50px;
-    }
+.product-ticker-slider {
+    margin-top: -35px;
 }
-.product-hero-left{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    gap: 26px;
-    align-items: center;
-}
-.product-main-img{
-    border-radius: 15px;
-    border: 1px solid #CAC5BF;
-    cursor: pointer;
-    overflow: hidden;
 
-    img{
-        max-width: 642px;
-    }
-        img{
-            transition: 0.3s;
-        }
-        &:hover{
-            img{
-                transform: scale(1.1);
-            }
-        }
-}
-.product-variable-img{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    .img-inner{
-        width: 127px;
-        height: 127px;
-        border: 1px solid #CAC5BF;
-        border-radius: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        overflow: hidden;
-
-        img{
-            transition: 0.3s;
-        }
-        &:hover{
-            img{
-                transform: scale(1.1);
-            }
-        }
-    }
-}
-.product-hero-right{
-    .title{
-        font-size: 70px;
-    }
-    .template-btn{
-        display: flex !important;
-        justify-content: center;
-        width: 100%;
-        margin-top: 20px;
-    }
-}
-.product-hero-review{
-    display: flex;
-    align-items: center;
-    gap: 7px;
-    .icon-wrapper{
-        i{
-            color: #F8CA36;
-        }
-    }
-    .review-text{
-        font-size: 18px;
-        font-weight: 500;
-        font-family: var(--body-font);
-    }
-}
-.product-hero-prize{
-    display: flex;
-    align-items: center;
-    margin: 15px 0 5px 0;
-}
-.product-hero-klarna{
-    display: flex;
-    align-items: center;
-    gap: 39px;
-    .klarna{
-        font-weight: 600;
-
-    }
-}
-.hero-product-description{
-    border-top: 1px solid rgba(21, 24, 32, 0.15);
-    padding-top: 20px;
-}
-.counter-container {
-    margin-top: 24px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--white-color);
-    border-radius: 8px;
-    border: 1.5px solid #151820;
-    width: 151px;
-    height: 57px;
-    button {
-      padding: 15px 16px;
-      border: none;
-      background-color: transparent;
-      color: #151820;;
-      font-size: 15px;
-      font-weight:700;
-      cursor: pointer;
-      transition: 0.3s;
-      &:hover {
-        color: var(--primary-color);
-      }
-    }
-    #counter {
-      color: rgba(14, 21, 35, 1);
-      font-weight: 700;
-      padding: 15px 16px;
-    }
-  }
-  .ph-text-box{
-    margin-top: 29px;
-    margin-bottom: 30px;
-    background: #FBFAF9;
-    border-radius: 10px;
-    padding: 26px 43px 16px 43px;
-    border: 1px solid #DCDCDD;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-    .text-box-inner{
-        width: calc(33% - 1px);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
-        margin-bottom: 18px;
-        .icon{
-            width: 43px;
-            height: 43px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #ECEAE6;
-            border-radius: 50%;
-            img{
-                width: 20px;
-                height: 20px;
-            }
-        }
-        p{
-            line-height: 25px;
-            font-weight: 400;
-        }
-    }
-
-  }
-  .ph-description{
-    border-radius: 10px;
-    background-color: #FBFAF9;
-    border: 1px solid #DCDCDD;
-    padding: 12px 13px;
-    .title-wrapper{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        .icon{
-            width: 34px;
-            height: 34px;
-            border-radius: 3px;
-            display: flex;
-            align-items: center;
-            background: var(--primary-color);
-            justify-content: center;
-            color: var(--white-color);
-            i{
-                transform: rotate(90deg);
-            }
-        }
-    }
-    .ph-box-des{
-        margin-top: 20px;
-        transform: translateY(-10px);
-         transition: opacity 0.3s ease, transform 0.3s ease;
-    }   
-  }
-
-Product Hero End ********/
 .sc-htw-section {
-    padding: 100px 0;
+    padding: 100px 0 46px;
     background: transparent !important;
     position: relative;
     z-index: 1;
@@ -219,60 +17,80 @@ Product Hero End ********/
         padding: 40px 0;
     }
 }
-.sc-htw-items{
-    @include screen-768{
+
+.sc-htw-items {
+    @include screen-768 {
         margin-top: 30px;
+
+        & .g-4 {
+            --bs-gutter-y: 12px;
+        }
     }
+
 }
-.sc-htw-card{
+
+.sc-htw-card {
     background: #F64A00;
     border: 2px solid #fff;
     transition: 0.3s;
     position: relative;
-    &:hover{
-        box-shadow: 10px 10px 20px #331A07;
+
+    &:hover {
+        box-shadow: 10px 10px 23px 0px rgba(51, 26, 27, 0.5);
     }
-    .htw-thumb{
-      margin: 0;
-      border-radius: 10px 10px 0 0 !important;
+
+    .htw-thumb {
+        margin: 0;
+        border-radius: 10px 10px 0 0 !important;
     }
-    @include screen-768{
+
+    @include screen-768 {
         display: flex;
         gap: 10px;
         align-items: center;
         padding: 10px;
-        .htw-thumb{
+
+        .htw-thumb {
             width: 50%;
         }
-        .sc-htw-content{
+
+        .sc-htw-content {
             padding: 0;
             text-align: left;
         }
     }
-    @include portrait-phone{
+
+    @include portrait-phone {
         gap: 6px;
     }
-    @include screen-1050{
+
+    @include screen-1050 {
         min-height: 440px;
     }
-    @include screen-768{
+
+    @include screen-768 {
         min-height: 0px;
     }
 }
-.sc-htw-content{
+
+.sc-htw-content {
     background: #F64A00;
     border-radius: 0 0 10px 10px;
-    h3{
-      color: #fff;
-      @include portrait-phone{
-        letter-spacing: 1px;
-      }
+
+    h3 {
+        color: #fff;
+
+        @include portrait-phone {
+            letter-spacing: 1px;
+        }
     }
-    p{
-      color: #F8CA36;
-      @include portrait-phone{
-        line-height: 20px;
-      }
+
+    p {
+        color: #F8CA36;
+
+        @include portrait-phone {
+            line-height: 20px;
+        }
     }
 }
 
@@ -287,9 +105,17 @@ Product Hero End ********/
 
 .sc-htw-pen {
     position: absolute;
-    left: 120px;
-    top: 80px;
-    z-index: -1;
+    left: -120px;
+    bottom: -26px;
+    z-index: 1;
+
+    @include screen-1460 {
+        left: -75px;
+    }
+
+    @include large-screen {
+        bottom: auto;
+    }
 
     @include screen-768 {
         display: none;
@@ -301,10 +127,54 @@ Product Hero End ********/
     right: 5px;
     top: 5px;
     z-index: 2;
-    img{
-        @include portrait-phone{
+
+    img {
+        @include portrait-phone {
             width: 41px;
             height: 41px;
+        }
+    }
+}
+
+.design-img-wrapper {
+    position: relative;
+
+    & h2 {
+        font-size: 172px;
+        line-height: 1.25;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        text-align: center;
+
+        @include screen-1400 {
+            font-size: 148px;
+        }
+
+        @include large-screen {
+            font-size: 119px;
+        }
+
+        @include screen-992 {
+            font-size: 88px;
+        }
+
+        @include screen-768 {
+            font-size: 10.9vw;
+        }
+        @include screen-400 {
+            font-size: 10.4vw;
+        }
+
+        & img {
+            position: absolute;
+            top: 46%;
+            transform: translateY(-46%);
+
+            @include large-screen {
+                max-width: 92%;
+            }
         }
     }
 }
@@ -313,12 +183,11 @@ Product Hero End ********/
 
 /******* Design Section Start***********/
 .design-section {
-    padding: 50px 0;
+    padding: 0px 0 65px;
 }
 
 .design-item {
     margin: 0 30px;
-    margin-top: 48px;
 
     @include portrait-phone {
         margin: 0 10px;
@@ -509,6 +378,7 @@ Product Hero End ********/
         display: none;
     }
 }
+
 /******* compare***********/
 
 
@@ -519,6 +389,7 @@ Product Hero End ********/
     z-index: 5;
     padding: 120px 0;
     position: relative;
+
     @include screen-768 {
         padding: 40px 0 90px 0;
     }
@@ -538,19 +409,23 @@ Product Hero End ********/
         font-size: 170px;
         color: var(--white-color);
         line-height: 155px;
+
         @include screen-1460 {
             font-size: 120px;
             line-height: 100px;
         }
+
         @include large-screen {
             font-size: 90px;
             line-height: 90px;
         }
+
         @include screen-460 {
             font-size: 75px;
             line-height: 75px;
             text-align: center;
         }
+
         .week-content-span {
             color: var(--secondary-color);
         }
@@ -568,6 +443,7 @@ Product Hero End ********/
         font-weight: 600;
         line-height: 42px;
         color: var(--secondary-color);
+
         @include screen-460 {
             font-size: 17px;
         }
@@ -589,18 +465,22 @@ Product Hero End ********/
         text-align: center;
     }
 }
+
 .week-thumb {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 1px;
-    img{
+
+    img {
         width: calc(33% - 2px);
         border-radius: 20px;
         border: 1px solid #F8CA36;
     }
+
     @include screen-992 {
         text-align: center;
     }
 }
+
 /*** Week Section End*****/
